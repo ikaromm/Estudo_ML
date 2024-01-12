@@ -1,3 +1,17 @@
+# Scikit-Learn
+
+## Conteúdos
+- [Recursos do Scikit-Learn](#recursos-do-scikit-learn)
+- [StandardScaler](#standardscaler)
+
+## Descrição 
+
+### O que é o Scikit-Learn?
+
+Scikit-learn é uma biblioteca de aprendizado de máquina de código aberto amplamente utilizada na linguagem de programação Python. Famosa por sua simplicidade e eficácia, é uma das ferramentas mais populares para análise de dados e modelagem estatística.
+
+# Recursos do Scikit-Learn
+
 ## StandardScaler 
 
 StandardScaler é uma ferramenta do Scikit-learn usada para pré-processar dados antes de aplicar algoritmos de aprendizado de máquina. Seu principal objetivo é padronizar os recursos (colunas) dos dados, garantindo que eles tenham média 0 e variância 1. 

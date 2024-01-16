@@ -3,7 +3,7 @@
 ## Conteúdos
 - [Recursos do Scikit-Learn](#recursos-do-scikit-learn)
 - [StandardScaler](#standardscaler)
-
+- [Métricas](#métricas)
 ## Descrição 
 
 ### O que é o Scikit-Learn?
@@ -29,3 +29,37 @@ onde:
 - $`\mu`$ é a média dos valores de `X`.
 - $`\sigma`$ é o desvio padrão dos valores de `X`.
 
+# Métricas
+
+## Classificação: 
+
+### Acurácia 
+A Acurácia é calculada com 
+
+$$
+Acurácia = \frac{Predicões \ Corretas}{Predicões \ Totais}
+$$
+
+Portanto, ela responde a pergunta de "o quanto esse modelo acerta?" ou "qual a % de acerto".
+
+###  Precisão 
+Para explicar o que é precisão é preciso explicar primeiramente o que é  Verdadeiro Positivo (True Positive) e Falso Positivo (False Positive). Para facilitar irei tomar o termo em inglês. Que pode ser compreendido com a imagem: 
+
+![](img/Table1-2.png.webp)
+A imagem foi retirada do site "https://plat.ai/blog/confusion-matrix-in-machine-learning/".
+
+Para calcular a precisão podemos utilizar 
+
+$$
+Precisão = \frac{True \ Positives}{True \ Positives + False \ Positives}
+$$
+
+Aumentar a precisão em alguns tipos de modelo é essencial, por exemplo, para modelos de Diagnóstico Médico, Sistemas de Justiça Criminal e Detecção de Fraude são alguns dos modelos que a precisão faz um papel essencial.
+
+###  Recall (Sensibilidade)
+
+###  F1-Score 
+
+###  Matriz de Confusão 
+
+###  ROC-AUC

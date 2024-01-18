@@ -1,9 +1,12 @@
 # Scikit-Learn
 
 ## Conteúdos
+- [Introdução ao Scikit-Learn](#descrição)
+- [Paradigmas de Aprendizado de Máquina](#os-3-paradigmas-machine-learn)
+- [Tipos de Modelos](#tipos-de-modelo)
+- [Classes e Desbalanceamento](#tipos-de-classes)
 - [Recursos do Scikit-Learn](#recursos-do-scikit-learn)
-- [StandardScaler](#standardscaler)
-- [Métricas](#métricas)
+- [Métricas de Avaliação](#métricas)
 ## Descrição 
 
 ### O que é o Scikit-Learn?
@@ -12,21 +15,46 @@ Scikit-learn é uma biblioteca de aprendizado de máquina de código aberto ampl
 
 
 # Definições
+## Os 3 Paradigmas Machine Learn
 
-## Tipos de Modelo
+### Aprendizado Supervisionado (Supervised Learning - SL)
+Mais conhecido como Supervised Learning (SL)
+No aprendizado supervisionado, o modelo é treinado com um conjunto de dados rotulado. Isso significa que cada exemplo no conjunto de treinamento é composto por um par de entrada (como uma imagem ou um conjunto de características) e a saída correspondente, ou rótulo (como uma etiqueta ou valor). O objetivo é aprender um mapeamento dos dados de entrada para a saída, de modo que o modelo possa prever a saída para novos exemplos de entrada. Esse tipo de aprendizado é amplamente utilizado para tarefas como classificação (por exemplo, distinguir entre imagens de gatos e cachorros) e regressão (por exemplo, prever preços de casas com base em características).
 
-### Classificação
+### Aprendizado não Supervisionado (Unsupervised Learning - UL)
+O aprendizado não supervisionado envolve o treinamento de modelos em conjuntos de dados onde as saídas ou rótulos não são fornecidos. O objetivo é descobrir padrões ocultos, agrupamentos ou estruturas nos dados. Os algoritmos de aprendizado não supervisionado tentam modelar a estrutura ou distribuição subjacente dos dados a fim de aprender mais sobre os dados. Exemplos comuns incluem agrupamento (por exemplo, agrupar clientes com base em comportamentos de compra) e redução de dimensionalidade (por exemplo, simplificar dados de alta dimensão para facilitar a visualização).
 
+### Aprendizado por Reforço (Reinforcement Learning - RL)
+No aprendizado por reforço, um agente aprende a tomar decisões por meio de um processo de tentativa e erro. O agente interage com um ambiente e recebe recompensas ou penalidades com base nas ações que executa. O objetivo é aprender uma política de ações que maximize a soma de recompensas ao longo do tempo. Este tipo de aprendizado é particularmente útil para tarefas que requerem uma sequência de decisões, como jogos, navegação de robôs, ou otimização de sistemas. O aprendizado por reforço difere do aprendizado supervisionado e não supervisionado porque o agente aprende com as consequências de suas ações, ao invés de ser ensinado explicitamente com dados rotulados ou não rotulados.
+
+## Tipos de Modelo c/ Aprendizado Supervisionado
+
+### Regressão Linear
+### Regressão Logística
+### Árvores de Decisão
+### Random Forest
+### Máquinas de Vetores de Suporte (SVM)
+### Redes Neurais Artificiais
+
+## Tipos de Modelo c/ Aprendizado não Supervisionado
+
+### K-Means
+### Análise de Componentes Principais (PCA):
+### Agrupamento Hierárquico:
+### DBSCAN
+
+## Tipos de Modelo c/ Aprendizado por Reforço
+
+### Q-Learning
+### Política de Gradiente
+### Deep Q-Network (DQN)
+### Aprendizado por Reforço Profundo
 
 ## Tipos de Classes
 
 ### Classe Balanceada
 
-
 ### Classe Desbalanceada
-
-
-
 
 # Recursos do Scikit-Learn
 
@@ -51,10 +79,10 @@ onde:
 
 ## Conteúdos
 - [Acurácia](#acurácia)
-- [Precisão ](#precisão)
+- [Precisão](#precisão)
 - [Recall (Sensibilidade)](#recall-sensibilidade)
 - [F1-Score](#f1-score)
-- [Matriz de Confusão](#Matriz-de-Confusão )
+- [Matriz de Confusão](#matriz-de-confusão)
 - [ROC-AUC](#roc-auc)
 
 ## Classificação: 
@@ -72,6 +100,7 @@ Portanto, ela responde a pergunta de "o quanto esse modelo acerta?" ou "qual a %
 Para explicar o que é precisão é preciso explicar primeiramente o que é  Verdadeiro Positivo (True Positive) e Falso Positivo (False Positive). Para facilitar irei tomar o termo em inglês. Que pode ser compreendido com a imagem: 
 
 ![](img/Table1-2.png.webp)
+
 A imagem foi retirada do site "https://plat.ai/blog/confusion-matrix-in-machine-learning/".
 
 Para calcular a precisão podemos utilizar 

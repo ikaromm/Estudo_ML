@@ -30,8 +30,72 @@ No aprendizado por reforço, um agente aprende a tomar decisões por meio de um 
 ## Tipos de Modelo c/ Aprendizado Supervisionado
 
 ### Regressão Linear
+A regressão linear é um método estatístico utilizado para modelar a relação entre uma variável dependente (ou resposta) e uma ou mais variáveis independentes (ou preditoras). O objetivo é encontrar uma equação linear que represente a relação entre essas variáveis da melhor maneira possível.
+
+![](img/regressaosimples.png)
+
+[Imagem retirada do site analise macro](https://analisemacro.com.br/econometria-e-machine-learning/regressao-linear-teoria-e-pratica/)
+
+Como podemos perceber pela imagem temos basicamente que a regressão linear simples faz uma reta tentando minimizar a distância entre todos os pontos. Sua forma algébrica é dada na forma: 
+
+$$
+y = \beta_0 + \beta_1 x + \epsilon
+$$
+
+onde:
+- $\beta_0$ é o intercepto .
+- $\beta_1$ é o coeficiente angular.
+- $\epsilon$ é o termo de erro.
+- $x$ é a variável independente.
+- $y$ é a variável dependente.
+
+Existe a regressão múltipla que consiste em uma sequência de $\beta_n x_n$ influênciando no $y$.
+
+**Premissas:**
+
+Esta parte do [texto foi retirada do site analise macro](https://analisemacro.com.br/econometria-e-machine-learning/regressao-linear-teoria-e-pratica/)
+
+"
+Quando usamos o modelo de regressão linear, implicitamente assumimos algumas premissas sobre a equação anterior. Aqui vamos destacar algumas delas:
+
+**-Primeiro**, assumimos que o modelo é uma aproximação razoável da realidade, ou seja, a relação entre a variável dependente e as variáveis independentes satisfazem essa equação linear.
+
+**-Segundo**, assumimos as seguintes premissas sobre o termo de erro e da regressão:
+
+Erros têm média zero, caso contrário, os valores previstos de y serão sistematicamente tendenciosos;
+Erros não são autocorrelacionados, caso contrário, as previsões serão ineficientes, pois haveria mais informações nos dados que poderiam ser exploradas;
+Erros não têm relação com as variáveis independentes, caso contrário, haveria mais informações que deveriam ser incluídas na parte sistemática do modelo.
+Também é útil ter os erros distribuídos normalmente com uma variância constante para produzir intervalos de previsão. Vale pontuar que as premissas podem variar conforme o método de estimação dos coeficientes."
+
 ### Regressão Logística
+O objetivo da regressão Logística é estimar a probabilidade associada a ocorrência de determinado evento. Logo os valores vão variar entre 0% à 100%. O modelo de regressão logísca tem a seguinte forma: 
+
+$$
+P(Y=1) = \frac{1}{1+ e^{-g(x)}}
+$$
+
+onde:
+- $P$ é probabilidade do evento .
+- $g(x) = \beta_0 + \beta_1 x_1 + ... + \beta_n x_n$.
+
+Os estimadores $\beta_i$ são dados pelo método da máxima verossimilhança. 
+![alt text](img/curvalogistica.png)
+
+[Imagem retirado de um material da USP](https://edisciplinas.usp.br/pluginfile.php/3769787/mod_resource/content/1/09_RegressaoLogistica.pdf)
+
+Para tirarmos uma conclusão desde modelo normalmente é separado da seguinte forma 
+
+- Se $P(Y=1)> 0.5$ então classifica-se Y=1
+- Se $P(Y=1)< 0.5$ então classifica-se Y=0
+
+O valor de 0.5 é o 'default', podemos altera-lo caso faça sentido para o nosso modelo.
+
+Para avaliar nosso modelo podemos utilizar o teste de Wald. Ele avalia o grau de significância de cada coeficiente $\beta_i.$
+
+
 ### Árvores de Decisão
+https://edisciplinas.usp.br/pluginfile.php/4469825/mod_resource/content/1/ArvoresDecisao_normalsize.pdf
+
 ### Random Forest
 ### Máquinas de Vetores de Suporte (SVM)
 ### Redes Neurais Artificiais
@@ -55,6 +119,13 @@ No aprendizado por reforço, um agente aprende a tomar decisões por meio de um 
 ### Classe Balanceada
 
 ### Classe Desbalanceada
+
+## Tipos de variável
+
+### Variável dependente 
+categorica
+
+### Variável independente
 
 # Recursos do Scikit-Learn
 

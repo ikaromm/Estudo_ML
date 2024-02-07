@@ -94,9 +94,36 @@ Para avaliar nosso modelo podemos utilizar o teste de Wald. Ele avalia o grau de
 
 
 ### Árvores de Decisão
-https://edisciplinas.usp.br/pluginfile.php/4469825/mod_resource/content/1/ArvoresDecisao_normalsize.pdf
+
+A árvore de decisão é um modelo de aprendizado de máquina que pode ser utilizado tanto para problemas de regressão quanto para problemas de classificação. Ela é construída de forma hierárquica, onde o conjunto de dados é dividido em subconjuntos com base em condições específicas, levando a decisões ou previsões.
+
+A seguir, apresento uma descrição mais detalhada das terminologias associadas à árvore de decisão:
+
+Root Node (Nó Raiz): O nó inicial no início de uma árvore de decisão, onde toda a população ou conjunto de dados começa a ser dividido com base em diferentes características ou condições.
+
+Decision Nodes (Nós de Decisão): Nós resultantes da divisão dos nós raiz, conhecidos como nós de decisão. Esses nós representam decisões intermediárias ou condições dentro da árvore.
+
+Leaf Nodes (Nós Folha): Nós onde não é possível realizar mais divisões, indicando frequentemente a classificação final ou resultado. Também são chamados de nós terminais.
+
+Sub-Tree (Sub-Árvore): Semelhante a uma subseção de um gráfico sendo chamada de sub-gráfico, uma subseção de uma árvore de decisão é referida como sub-árvore. Ela representa uma porção específica da árvore de decisão.
+
+Pruning (Poda): O processo de remoção ou corte de nós específicos em uma árvore de decisão para evitar overfitting (ajuste excessivo) e simplificar o modelo.
+
+Branch / Sub-Tree (Ramo / Sub-Árvore): Uma subseção da árvore de decisão completa é referida como um ramo ou sub-árvore. Ela representa um caminho específico de decisões e resultados dentro da árvore.
+
+Parent and Child Node (Nó Pai e Nó Filho): Em uma árvore de decisão, um nó que é dividido em sub-nós é conhecido como nó pai, e os sub-nós que surgem dele são chamados de nós filhos. O nó pai representa uma decisão ou condição, enquanto os nós filhos representam os resultados potenciais ou decisões subsequentes com base nessa condição.
+
+![analyticsvidhya](img/decisiontree.png)
+
+Imagem retirada do site [analyticsvidhya](https://www.analyticsvidhya.com/blog/2021/08/decision-tree-algorithm/#:~:text=A%20decision%20tree%20algorithm%20is,each%20node%20of%20the%20tree.).
+
+A árvore de decisão busca fazer as melhores perguntas para dividir os dados de maneira eficaz e chegar a decisões ou previsões precisas. No entanto, é interessante notar que em alguns casos, perguntas aparentemente aleatórias podem ser mais eficazes para resolver certos tipos de problemas, o que destaca a versatilidade desse modelo em explorar diferentes caminhos de decisão.
+
+Uma fonte que pode ser utilizada de referência que explica detalhamente este modelo e está em português é: [Edisciplinas USP](https://edisciplinas.usp.br/pluginfile.php/4469825/mod_resource/content/1/ArvoresDecisao_normalsize.pdf).
 
 ### Random Forest
+
+
 ### Máquinas de Vetores de Suporte (SVM)
 ### Redes Neurais Artificiais
 

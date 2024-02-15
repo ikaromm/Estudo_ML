@@ -123,6 +123,20 @@ Uma fonte que pode ser utilizada de referência que explica detalhamente este mo
 
 ### Random Forest
 
+O Random Forest (Floresta Aleatória) é um poderoso algoritmo de aprendizado de máquina que pertence à categoria de métodos de ensemble. Ensemble refere-se à técnica de combinar vários modelos para obter um desempenho melhor do que o de cada modelo individual. Random Forest é particularmente eficaz para problemas de classificação e regressão.
+
+O ensacamento, também conhecido como Bootstrap Aggregating, é uma técnica utilizada pelo Random Forest para criar múltiplas árvores de decisão diferentes. Esse processo envolve a criação de várias amostras de treinamento com reposição a partir do conjunto de dados original, sendo cada amostra usada para treinar uma árvore de decisão.
+
+Durante a construção de cada árvore, o algoritmo Random Forest introduz subconjuntos aleatórios de atributos. Em cada nó de decisão, um subconjunto de atributos é selecionado aleatoriamente. Essa aleatoriedade contribui para garantir a diversidade entre as árvores, evitando que um único atributo dominante influencie demasiadamente o modelo.
+
+Quanto às previsões, no caso de classificação, as árvores votam e a previsão final é determinada pelo voto majoritário. Para problemas de regressão, as previsões são geralmente médias.
+
+O Random Forest apresenta diversas vantagens, incluindo robustez para lidar com dados ausentes e outliers, alta precisão em comparação com uma única árvore de decisão, e capacidade de lidar com overfitting, graças à aleatoriedade na seleção de atributos e ensacamento.
+
+Porém, algumas desvantagens também são observadas, como a complexidade computacional, já que treinar várias árvores pode ser intensivo em termos de recursos, e a menor interpretabilidade em comparação com uma única árvore de decisão.
+
+O Random Forest encontra aplicações em diversas áreas, como diagnóstico médico, detecção de fraudes, previsão de churn em clientes, reconhecimento de padrões, entre outras. Sua versatilidade e eficácia o tornam uma escolha popular para uma variedade de problemas de aprendizado de máquina.
+
 
 ### Máquinas de Vetores de Suporte (SVM)
 ### Redes Neurais Artificiais

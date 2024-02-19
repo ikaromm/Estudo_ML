@@ -139,6 +139,55 @@ O Random Forest encontra aplicações em diversas áreas, como diagnóstico méd
 
 
 ### Máquinas de Vetores de Suporte (SVM)
+É um algoritmo de ML utilizado tanto para classificação quanto para regressão. O principal objetivo das SVMs é encontrar o hiperplano de decisão que melhor separa as classes em um espaço de alta dimensão. Elas são particularmente eficazes em espaços de características complexos, nos quais as fronteiras de decisão não 
+são lineares.
+
+**Alguns dos hiperparâmetros utilizados no SVM são:** 
+
+- Kernel (Tipo de Kernel):
+
+O kernel determina a função matemática usada para transformar os dados originais em um espaço de características de maior dimensão. Os kernels comuns incluem o linear, polinomial e radial (ou gaussiano). A escolha do kernel depende da natureza dos dados e da complexidade da relação entre as classes.
+
+- Custo (C):
+
+O parâmetro C controla o equilíbrio entre alcançar uma margem mais ampla e classificar corretamente os pontos de treinamento. Um valor grande de C implica uma penalidade mais severa por classificações incorretas, o que pode levar a uma margem menor, mas uma classificação mais precisa dos dados de treinamento.
+
+- Parâmetro do Kernel (Gamma):
+
+Especificamente para kernels polinomiais e radiais, o parâmetro gamma (γ) controla a influência de uma única amostra de treinamento, afetando a forma da superfície de decisão. Valores baixos de gamma indicam uma influência mais ampla, enquanto valores altos indicam uma influência mais restrita.
+
+- Margem (epsilon):
+
+Em problemas de regressão com SVM, você pode ter um hiperparâmetro epsilon que controla a largura da faixa de suporte, que é a margem permitida para os pontos de treinamento fora da faixa de suporte.
+
+**Algumas vantagens:** 
+
+- Bom Desempenho em Problemas de Classificação Binária:
+
+SVM é particularmente poderoso em problemas de classificação binária, onde a separação linear ou não linear é crucial.
+
+- Regularização Incorporada:
+
+A função de custo C atua como um parâmetro de regularização incorporado, controlando a flexibilidade do modelo e ajudando a evitar overfitting.
+
+- Manuseio Eficiente de Espaços Não Lineares:
+
+Através do uso de kernels, o SVM pode lidar eficientemente com problemas não lineares, mapeando os dados para espaços de características mais complexos.
+
+**Algumas desvantagens:**
+
+- Complexidade Computacional:
+
+O treinamento de SVMs pode ser computacionalmente intensivo, especialmente em conjuntos de dados muito grandes.
+
+- Escolha de Parâmetros:
+
+A escolha adequada de parâmetros, como o tipo de kernel e os valores de C e gamma, pode ser desafiadora e influenciar significativamente o desempenho.
+
+- Interpretabilidade Limitada:
+
+Os resultados gerados por SVM podem ser difíceis de interpretar, especialmente em espaços de características de alta dimensão.
+
 ### Redes Neurais Artificiais
 
 ## Tipos de Modelo c/ Aprendizado não Supervisionado
